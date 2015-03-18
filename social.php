@@ -63,22 +63,22 @@ public function widget( $args, $instance ) {
 	echo '<ul>';
 
 	if ( ! empty( $facebook_username ) )
-		echo '<li><a title="Facebook" href="' . esc_url( 'https://www.facebook.com/' . $facebook_username . '/' ) . '">' . '<span class="genericon genericon-facebook"></span>' . '</a></li>';
+		echo '<li><a title="View ' . $facebook_username . '&#8217;s profile on Facebook" href="' . esc_url( 'https://www.facebook.com/' . $facebook_username . '/' ) . '">' . '<span class="genericon genericon-facebook"></span>' . '</a></li>';
 
 	if ( ! empty( $twitter_username ) )
-		echo '<li><a title="Twitter" href="' . esc_url( 'https://twitter.com/' . $twitter_username . '/' ) . '">' . '<span class="genericon genericon-twitter"></span>' . '</a></li>';
+		echo '<li><a title="View ' . $twitter_username . '&#8217;s profile on Twitter" href="' . esc_url( 'https://twitter.com/' . $twitter_username . '/' ) . '">' . '<span class="genericon genericon-twitter"></span>' . '</a></li>';
 
 	if ( ! empty( $instagram_username ) )
-		echo '<li><a title="Instagram" href="' . esc_url( 'https://instagram.com/' . $instagram_username . '/' ) . '">' . '<span class="genericon genericon-instagram"></span>' . '</a></li>';
+		echo '<li><a title="View ' . $instagram_username . '&#8217;s profile on Instagram" href="' . esc_url( 'https://instagram.com/' . $instagram_username . '/' ) . '">' . '<span class="genericon genericon-instagram"></span>' . '</a></li>';
 
 	if ( ! empty( $pinterest_username ) )
-		echo '<li><a title="Pinterest" href="' . esc_url( 'https://www.pinterest.com/' . $pinterest_username . '/' ) . '">' . '<span class="genericon genericon-pinterest-alt"></span>' . '</a></li>';
+		echo '<li><a title="View ' . $pinterest_username . '&#8217;s profile on Pinterest" href="' . esc_url( 'https://www.pinterest.com/' . $pinterest_username . '/' ) . '">' . '<span class="genericon genericon-pinterest-alt"></span>' . '</a></li>';
 
 	if ( ! empty( $linkedin_username ) )
-		echo '<li><a title="LinkedIn" href="' . esc_url( 'https://www.linkedin.com/in/' . $linkedin_username . '/' ) . '">' . '<span class="genericon genericon-linkedin-alt"></span>' . '</a></li>';
+		echo '<li><a title="View ' . $linkedin_username . '&#8217;s profile on LinkedIn" href="' . esc_url( 'https://www.linkedin.com/in/' . $linkedin_username . '/' ) . '">' . '<span class="genericon genericon-linkedin-alt"></span>' . '</a></li>';
 
 	if ( ! empty( $github_username ) )
-		echo '<li><a title="GitHub" href="' . esc_url( 'https://github.com/' . $github_username . '/' ) . '">' . '<span class="genericon genericon-github"></span>' . '</a></li>';
+		echo '<li><a title="View ' . $github_username . '&#8217;s profile on GitHub" href="' . esc_url( 'https://github.com/' . $github_username . '/' ) . '">' . '<span class="genericon genericon-github"></span>' . '</a></li>';
 
 	echo '</ul>';
 
