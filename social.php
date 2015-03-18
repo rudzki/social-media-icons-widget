@@ -7,7 +7,7 @@ Author: Chris Rudzki
 
 // Creating the widget 
 
-class wpcom_social_media_icons_widget extends WP_Widget {
+class WPCOM_social_media_icons_widget extends WP_Widget {
 
 function __construct() {
 	parent::__construct(
