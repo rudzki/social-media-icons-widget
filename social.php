@@ -90,54 +90,14 @@ public function widget( $args, $instance ) {
 // backend 
 public function form( $instance ) {
 
-if ( isset( $instance[ 'title' ] ) ) {
-	$title = $instance[ 'title' ];
-}
-else {
-	$title = __( 'Social', 'wpcom_social_media_icons_widget_domain' );
-}
-
-if ( isset( $instance[ 'facebook_username'] ) ) {
-	$facebook_username = $instance[ 'facebook_username' ];
-}
-else {
-	$facebook_username = '';
-}
-
-if ( isset( $instance[ 'twitter_username'] ) ) {
-	$twitter_username = $instance[ 'twitter_username' ];
-}
-else {
-	$twitter_username = '';
-}
-
-if ( isset( $instance[ 'instagram_username'] ) ) {
-	$instagram_username = $instance[ 'instagram_username' ];
-}
-else {
-	$instagram_username = '';
-}
-
-if ( isset( $instance[ 'pinterest_username'] ) ) {
-	$pinterest_username = $instance[ 'pinterest_username' ];
-}
-else {
-	$pinterest_username = '';
-}
-
-if ( isset( $instance[ 'linkedin_username'] ) ) {
-	$linkedin_username = $instance[ 'linkedin_username' ];
-}
-else {
-	$linkedin_username = '';
-}
-
-if ( isset( $instance[ 'github_username'] ) ) {
-	$github_username = $instance[ 'github_username' ];
-}
-else {
-	$github_username = '';
-}
+	$widget_title = isset( $instance['title'] ) ? $instance['title'] : __( 'Social', 'wpcom_social_media_icons_widget_domain' );
+	$title = apply_filters( 'widget_title', $widget_title );
+	$facebook_username = isset( $instance['facebook_username'] ) ? $instance['facebook_username'] : '';
+	$twitter_username = isset( $instance['twitter_username'] ) ? $instance['twitter_username'] : '';
+	$instagram_username = isset( $instance['instagram_username'] ) ? $instance['instagram_username'] : '';
+	$pinterest_username = isset( $instance['pinterest_username'] ) ? $instance['pinterest_username'] : '';
+	$linkedin_username = isset( $instance['linkedin_username'] ) ? $instance['linkedin_username'] : '';
+	$github_username = isset( $instance['github_username'] ) ? $instance['github_username'] : '';
 
 // widget settings
 ?>
