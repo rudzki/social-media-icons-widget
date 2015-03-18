@@ -57,7 +57,7 @@ public function widget( $args, $instance ) {
 	echo $args['before_widget'];
 
 	if ( ! empty( $title ) )
-		echo $args['before_title'] . esc_attr( $title ) . $args['after_title'];
+		echo $args['before_title'] . esc_html( $title ) . $args['after_title'];
 
 	// display output
 	echo '<ul>';
