@@ -15,9 +15,6 @@ function __construct() {
 		__('Social Media Icons', 'wpcom_social_media_icons_widget'), 
 		array( 'description' => __( 'A simple widget that displays social media icons', 'wpcom_social_media_icons_widget' ), ) 
 	);
-	if ( is_active_widget( false, false, $this->id_base ) ) {
-		add_action( 'wp_head', array( $this, 'wpcom_social_media_icons_widget_css' ) );
-	}
 }
 
 function wpcom_social_media_icons_widget_css() {
@@ -43,6 +40,10 @@ function wpcom_social_media_icons_widget_css() {
 
 // front end
 public function widget( $args, $instance ) {
+	
+	if ( is_active_widget( false, false, $this->id_base ) ) {
+		add_action( 'wp_footer', array( $this, 'wpcom_social_media_icons_widget_css' ) );
+	}
 
 	$widget_title = isset( $instance['title'] ) ? $instance['title'] : __( 'Social', 'wpcom_social_media_icons_widget' );
 	$title = apply_filters( 'widget_title', $widget_title );
