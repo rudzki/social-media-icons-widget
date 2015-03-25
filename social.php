@@ -25,6 +25,10 @@ function wpcom_social_media_icons_widget_css() {
 	margin-left: 0;
 }
 
+.widget_wpcom_social_media_icons_widget ul li::before {
+	display: none;
+}
+
 .widget_wpcom_social_media_icons_widget li {
 	display: inline;
 	margin-right: 0.5em;
