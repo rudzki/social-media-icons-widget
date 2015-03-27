@@ -103,27 +103,27 @@ class WPCOM_Social_Media_Icons_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'facebook_username' ) ); ?>"><?php esc_html_e( 'Facebook username:' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'facebook_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'facebook_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['$facebook_username'] ); ?>" />
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'facebook_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'facebook_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['facebook_username'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'twitter_username' ) ); ?>"><?php esc_html_e( 'Twitter username:' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'twitter_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'twitter_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['$twitter_username'] ); ?>" />
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'twitter_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'twitter_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['twitter_username'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'instagram_username' ) ); ?>"><?php esc_html_e( 'Instagram username:' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'instagram_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'instagram_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['$instagram_username'] ); ?>" />
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'instagram_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'instagram_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['instagram_username'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'pinterest_username' ) ); ?>"><?php esc_html_e( 'Pinterest username:' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'pinterest_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'pinterest_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['$pinterest_username'] ); ?>" />
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'pinterest_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'pinterest_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['pinterest_username'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'linkedin_username' ) ); ?>"><?php esc_html_e( 'LinkedIn username:' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'linkedin_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'linkedin_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['$linkedin_username'] ); ?>" />
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'linkedin_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'linkedin_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['linkedin_username'] ); ?>" />
 		</p>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'github_username' ) ); ?>"><?php esc_html_e( 'GitHub username:' ); ?></label>
-			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'github_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'github_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['$github_username'] ); ?>" />
+			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'github_username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'github_username' ) ); ?>" type="text" value="<?php echo esc_attr( $instance['github_username'] ); ?>" />
 		</p>
 	<?php
 	}
