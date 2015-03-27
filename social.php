@@ -39,28 +39,28 @@ class WPCOM_Social_Media_Icons_Widget extends WP_Widget {
 
 		echo '<ul>';
 
-		if ( ! empty( $facebook_username ) ) {
-			echo '<li><a title="View ' . $facebook_username . '&#8217;s profile on Facebook" href="' . esc_url( 'https://www.facebook.com/' . $facebook_username . '/' ) . '">' . '<span class="genericon genericon-facebook"></span>' . '</a></li>';
+		if ( ! empty( $instance['facebook_username'] ) ) {
+			echo '<li><a title="View ' . $instance['facebook_username'] . '&#8217;s profile on Facebook" href="' . esc_url( 'https://www.facebook.com/' . $instance['facebook_username'] . '/' ) . '">' . '<span class="genericon genericon-facebook"></span>' . '</a></li>';
 		}
 
-		if ( ! empty( $twitter_username ) ) {
-			echo '<li><a title="View ' . $twitter_username . '&#8217;s profile on Twitter" href="' . esc_url( 'https://twitter.com/' . $twitter_username . '/' ) . '">' . '<span class="genericon genericon-twitter"></span>' . '</a></li>';
+		if ( ! empty( $instance['twitter_username'] ) ) {
+			echo '<li><a title="View ' . $instance['twitter_username'] . '&#8217;s profile on Twitter" href="' . esc_url( 'https://twitter.com/' . $instance['twitter_username'] . '/' ) . '">' . '<span class="genericon genericon-twitter"></span>' . '</a></li>';
 		}
 
-		if ( ! empty( $instagram_username ) ) {
-			echo '<li><a title="View ' . $instagram_username . '&#8217;s profile on Instagram" href="' . esc_url( 'https://instagram.com/' . $instagram_username . '/' ) . '">' . '<span class="genericon genericon-instagram"></span>' . '</a></li>';
+		if ( ! empty( $instance['instagram_username'] ) ) {
+			echo '<li><a title="View ' . $instance['instagram_username'] . '&#8217;s profile on Instagram" href="' . esc_url( 'https://instagram.com/' . $instance['instagram_username'] . '/' ) . '">' . '<span class="genericon genericon-instagram"></span>' . '</a></li>';
 		}
 
-		if ( ! empty( $pinterest_username ) ) {
-			echo '<li><a title="View ' . $pinterest_username . '&#8217;s profile on Pinterest" href="' . esc_url( 'https://www.pinterest.com/' . $pinterest_username . '/' ) . '">' . '<span class="genericon genericon-pinterest-alt"></span>' . '</a></li>';
+		if ( ! empty( $instance['pinterest_username'] ) ) {
+			echo '<li><a title="View ' . $instance['pinterest_username'] . '&#8217;s profile on Pinterest" href="' . esc_url( 'https://www.pinterest.com/' . $instance['pinterest_username'] . '/' ) . '">' . '<span class="genericon genericon-pinterest-alt"></span>' . '</a></li>';
 		}
 
-		if ( ! empty( $linkedin_username ) ) {
-			echo '<li><a title="View ' . $linkedin_username . '&#8217;s profile on LinkedIn" href="' . esc_url( 'https://www.linkedin.com/in/' . $linkedin_username . '/' ) . '">' . '<span class="genericon genericon-linkedin-alt"></span>' . '</a></li>';
+		if ( ! empty( $instance['linkedin_username'] ) ) {
+			echo '<li><a title="View ' . $instance['linkedin_username'] . '&#8217;s profile on LinkedIn" href="' . esc_url( 'https://www.linkedin.com/in/' . $instance['linkedin_username'] . '/' ) . '">' . '<span class="genericon genericon-linkedin-alt"></span>' . '</a></li>';
 		}
 
-		if ( ! empty( $github_username ) ) {
-			echo '<li><a title="View ' . $github_username . '&#8217;s profile on GitHub" href="' . esc_url( 'https://github.com/' . $github_username . '/' ) . '">' . '<span class="genericon genericon-github"></span>' . '</a></li>';
+		if ( ! empty( $instance['github_username'] ) ) {
+			echo '<li><a title="View ' . $instance['github_username'] . '&#8217;s profile on GitHub" href="' . esc_url( 'https://github.com/' . $instance['github_username'] . '/' ) . '">' . '<span class="genericon genericon-github"></span>' . '</a></li>';
 		}
 
 		echo '</ul>';
